@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNofGVufDB8fDB8fHww);
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+        }
+        #s1{
+             display: flex;
+             justify-content: center;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 60px;
+             /* align-items: center; */
+             /* margin-top: 150px; */
+        }
+        #min {
+            font-size: 60px;
+        }
+        #seconds {
+            font-size: 60px;
+        }
+        #ms {
+            font-size: 60px;
+        }
+        .btn{
+            margin: 6px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <h1 id="s1">STOP WATCH</h1>
+    <div style="display: flex; justify-content: center;">
+       
+        <h1 id="min">0</h1>
+        <h1 id="min">:</h1>
+        <h1 id="seconds">0</h1>
+        <h1 id="seconds">:</h1>
+        <h1 id="ms">00</h1> 
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <button id="start_btn" onclick="start()" class="btn">START</button>
+        <button onclick="stop()" class="btn">STOP</button>
+        <button onclick="reset()" class="btn">RESET</button>
+    
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
